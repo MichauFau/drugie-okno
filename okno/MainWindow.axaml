@@ -12,15 +12,26 @@
         </LinearGradientBrush>
     </Window.Background>
 
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <!-- Napis Mumin -->
+    <!-- Napis Mumin zamykający program po kliknięciu -->
+    <Button Command="{Binding $parent[Window].Close}"
+            Background="Transparent"
+            BorderThickness="0"
+            Padding="0"
+            Cursor="Hand"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+        <Button.Styles>
+            <Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+            <Style Selector="Button:pressed /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+        </Button.Styles>
         <TextBlock Text="Mumin"
                    FontFamily="Segoe Script, Segoe Print, cursive"
                    FontSize="64"
                    FontWeight="Bold"
-                   Foreground="White"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   Margin="0,0,0,20"/>
-    </Grid>
+                   Foreground="White"/>
+    </Button>
 </Window>
