@@ -12,5 +12,9 @@
         </LinearGradientBrush>
     </Window.Background>
 
-    <TextBlock Text="Mumin" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <TextBlock Text="Mumin" 
+               FontSize="64"
+               FontWeight="Bold"
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"/>
 </Window>
