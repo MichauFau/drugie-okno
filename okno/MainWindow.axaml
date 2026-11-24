@@ -12,9 +12,15 @@
         </LinearGradientBrush>
     </Window.Background>
 
-    <TextBlock Text="Mumin" 
-               FontSize="64"
-               FontWeight="Bold"
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Center"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- Napis Mumin -->
+        <TextBlock Text="Mumin"
+                   FontFamily="Segoe Script, Segoe Print, cursive"
+                   FontSize="64"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="0,0,0,20"/>
+    </Grid>
 </Window>
